@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link'
 import { useRouter } from 'next/router';
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 import styles from '../styles/Navbar.module.css'
 export default function Navbar() {
   const router = useRouter();
@@ -9,6 +9,9 @@ export default function Navbar() {
   
      const [dropdownToggled, setdropdownToggle] = useState(false);
      const [background, setbackground] = useState(false)
+ 
+     
+     
      const changeBackground=()=>{
       if(window.scrollY>=50){
         setbackground(true)
@@ -45,7 +48,7 @@ export default function Navbar() {
      }
   return (
   <>
-    <div className={`${styles.nav} ${dropdownToggled? styles.toggle:""} ${background&& styles.active}`} >
+    <div className={`${styles.nav} ${dropdownToggled? styles.toggle:""} ${background || pathname!=='/'? styles.active :""} ` } >
     <div>
       <Link href="/"  >
       <Image src='/businessroketlogo.svg' width={350} height={50} className={styles.navlogo}  alt="icon"></Image>

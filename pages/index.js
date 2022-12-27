@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import About from '../components/basicpage/About'
 import Header from '../components/Header'
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
       </Head>
       <Header/>
+        <About/>
+     
      
     </>
   )

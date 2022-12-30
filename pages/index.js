@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import About from '../components/basicpage/About'
 import Blog from '../components/basicpage/Blogs'
+import Team from '../components/basicpage/Team'
 import Header from '../components/Header'
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
       <Header/>
         <About/>
         <Blog/>
-     
+     <Team/>
      
     </>
   )

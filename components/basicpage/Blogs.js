@@ -4,10 +4,10 @@ import styles from '../../styles/basicpage/Blogs.module.css'
 
 export default function Blog() {
   return (
-    <section class={styles.blogs} id="blogs">
+    <section className={styles.blogs} id="blogs">
 <h1 className={`${styles.heading} heading`}>our blogs</h1>
 
-    <div class={styles.boxContainer}> 
+    <div className={styles.boxContainer}> 
     <Blogitem/>
     <Blogitem/>
     <Blogitem/>
